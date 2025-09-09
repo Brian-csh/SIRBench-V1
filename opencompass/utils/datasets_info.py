@@ -415,6 +415,11 @@ DATASETS_MAPPING = {
         "hf_id": "THUDM/LongBench-v2",
         "local": "./data/longbenchv2/data.json",
     },
+    "opencompass/sirbenchv1": {
+        "ms_id": "",
+        "hf_id": "",
+        "local": "./data/sirbenchv1/",
+    },
     "opencompass/OlympiadBench": {
         "ms_id": "",
         "hf_id": "",

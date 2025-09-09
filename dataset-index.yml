@@ -1017,3 +1017,8 @@
     paper: https://arxiv.org/pdf/2402.09391
     configpath: opencompass/configs/datasets/SmolInstruct/smolinstruct_gen.py
     configpath_llmjudge: ''
+- longicl:
+    name: longicl
+    category: Understanding
+    paper: https://arxiv.org/pdf/xxxxxxx
+    configpath: opencompass/configs/datasets/longICL
