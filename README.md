@@ -1,7 +1,7 @@
 # SIRBench-V1: Scientific Inductive Reasoning Benchmark
 This repository contains the code for our EMNLP 2025 paper: **"On LLM-Based Scientific Inductive Reasoning Beyond Equations"**.
 
-## Overview
+## 📋 Overview
 Large Language Models (LLMs) have demonstrated strong deductive reasoning skills (e.g., mathematics, programming). However, their ability to perform **inductive reasoning in scientific contexts** remains underexplored.
 
 We introduce **SIRBench-V1**, the first benchmark to systematically evaluate LLMs on scientific inductive reasoning tasks beyond mathematical equations.
@@ -12,12 +12,12 @@ We introduce **SIRBench-V1**, the first benchmark to systematically evaluate LLM
 
 The benchmark spans 7 tasks across biology and chemistry:
 
-- Biology
+- 🧬 Biology
     1. DNA Translation
     2. DNA Table Inference
     3. DNA Transformation
 
-- Chemistry
+- ⚗️ Chemistry
     1. Molecule Design
     2. Molecule Captioning
     3. Reaction Prediction
@@ -25,19 +25,19 @@ The benchmark spans 7 tasks across biology and chemistry:
 
 Each task requires models to induce underlying scientific rules from examples and apply them to new inputs, rather than simply memorizing known mappings.
 
-## Installation
+## 🚀 Installation
 This repository builds on the [OpenCompass](https://github.com/open-compass/opencompass) framework, which enables efficient evaluation across different LLMs.
-1. Clone this repository
-2. Install the framework
+1. 📥 Clone this repository
+2. 🛠️ Install the framework
 ```
 pip install -e .
 ```
-3. Install additional dependencies
+3. 📦 Install additional dependencies
 ```
 pip install fcd rdkit biopython tenacity
 ```
 
-## Usage
+## 💻 Usage
 Each task can be run with the corresponding config file:
 ```
 opencompass examples/eval_sirbenchv1_{task}.py
@@ -50,7 +50,7 @@ opencompass examples/eval_sirbenchv1_dna_transform.py
 
 You can modify the config files under `./examples` to test any model supported by OpenCompass.
 
-## Repository Structure
+## 📁 Repository Structure
 - `./examples/`: Evaluation entrypoints for each SIRBench-V1 task.
 
 - `./data/sirbenchv1/`: Processed datasets.
@@ -65,10 +65,10 @@ You can modify the config files under `./examples` to test any model supported b
 
     - `icl_onepass_sc_inferencer.py` (Self-Consistency)
 
-## Data Source
+## 📊 Data Source
 We build SIRBench-V1 from authentic and counterfactual tasks using existing scientific resources.
 
-To generate more test samples based on different dataset configurations, please download the datasets from the sources below and put them in the specified path.
+To generate more test samples based on different dataset configurations, please download the datasets from the sources below and put them in the specified path. The configurations files in `opencompass/configs/datasets/sirbenchv1/` can then be modified accordingly.
 
 - Genomic sequences: [GenomicLLM_GRCh38](https://zenodo.org/records/10695802)
     - `20230906_cds_res_nt2aa_dev.csv`, `20230906_cds_res_nt2aa_test.csv`, `20230906_cds_res_nt2aa_train.csv` -> `data/sirbenchv1/dna_translator/`
