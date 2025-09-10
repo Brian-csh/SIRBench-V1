@@ -68,6 +68,8 @@ You can modify the config files under `./examples` to test any model supported b
 ## 📊 Data Source
 We build SIRBench-V1 from authentic and counterfactual tasks using existing scientific resources.
 
+Our benchmark is also available at [Hugging Face](https://huggingface.co/datasets/brianlin30/SIRBench-V1).
+
 To generate more test samples based on different dataset configurations, please download the datasets from the sources below and put them in the specified path. The configurations files in `opencompass/configs/datasets/sirbenchv1/` can then be modified accordingly.
 
 - Genomic sequences: [GenomicLLM_GRCh38](https://zenodo.org/records/10695802)
@@ -78,3 +80,16 @@ To generate more test samples based on different dataset configurations, please 
     - `uspto_mixed.pickle` -> `data/sirbenchv1/chem_reaction_prediction/`
 - Name prediction: [PubChem](https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/data/name_prediction/llm_test.csv)
     - `llm_test.csv` -> `data/sirbenchv1/chem_name_prediction/`
+
+## Citation
+If you use this code or benchmark, please cite our paper:
+```
+@inproceedings{lin2025sirbench,
+  title     = {On LLM-Based Scientific Inductive Reasoning Beyond Equations},
+  author    = {Brian S. Lin and Jiaxin Yuan and Zihan Zhou and Shouli Wang and Shuo Wang and 
+               Cunliang Kong and Qi Shi and Yuxuan Li and Liner Yang and Zhiyuan Liu and Maosong Sun},
+  booktitle = {Proceedings of EMNLP},
+  year      = {2025},
+  note      = {To appear}
+}
+```
