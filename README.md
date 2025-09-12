@@ -89,7 +89,6 @@ If you use this code or benchmark, please cite our paper:
   author    = {Brian S. Lin and Jiaxin Yuan and Zihan Zhou and Shouli Wang and Shuo Wang and 
                Cunliang Kong and Qi Shi and Yuxuan Li and Liner Yang and Zhiyuan Liu and Maosong Sun},
   booktitle = {Proceedings of EMNLP},
-  year      = {2025},
-  note      = {To appear}
+  year      = {2025}
 }
 ```
